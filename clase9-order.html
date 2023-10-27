@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+
+    <style>
+      :root {
+        --very-light-pink: #c7c7c7;
+        --white: #ffffff;
+        --text-input-field: #f7f7f7;
+        --hospital-green: #acd9b2;
+        --black: #000000;
+
+        --sm: 14px;
+        --md: 16px;
+        --lg: 18px;
+      }
+      body {
+        font-family: "Quicksand", sans-serif;
+        margin: 0;
+      }
+
+      .title {
+        justify-self: start;
+        font-size: var(--lg);
+      }
+
+      .main-container {
+        height: 100vh;
+        width: 100vw;
+        display: grid;
+        place-items: center;
+      }
+
+      .cards-container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 500px;
+        column-gap: 26px;
+        row-gap: 16px;
+        justify-content: center;
+        place-items: center;
+      }
+
+      .total {
+        background-color: var(--text-input-field);
+        display: flex;
+        align-items: center;
+        width: 500px;
+        justify-content: space-evenly;
+        border-radius: 16px;
+      }
+      .total-date,
+      .total-q {
+        margin: 8px 0;
+      }
+
+      .total-prize {
+        font-size: var(--md);
+        font-weight: bolder;
+        color: var(--black);
+      }
+
+      .total-date {
+        font-size: var(--lg);
+        font-weight: bolder;
+      }
+
+      .total-q {
+        font-size: var(--sd);
+        color: var(--very-light-pink);
+      }
+
+      .card {
+        width: 500px;
+        height: 120px;
+        grid-column: 1/2;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        place-items: center;
+      }
+
+      .card-img {
+        width: 120px;
+        
+        border-radius: 14px ;
+        object-fit: contain;
+        grid-column: 1/2;
+      }
+      .card-product {
+        grid-column: 2/3;
+        margin: 0 0 0 8px;
+        color: var(--very-light-pink);
+      }
+
+      .card-prize {
+        grid-column: 4/5;
+        font-weight: bolder;
+      }
+
+      .card-logo {
+        display: none;
+      }
+
+      .card-details img {
+        display: none;
+      }
+      .card-details p:nth-child(1),
+      .card-details p:nth-child(2) {
+        font-size: var(--sd);
+        color: var(--very-light-pink);
+      }
+
+      @media (max-width: 640px) {
+      }
+    </style>
+  </head>
+
+  <body>
+    <section class="main-container">
+      <div class="cards-container">
+        <h1 class="title">My order</h1>
+        <div class="total">
+          <div>
+            <p class="total-date">Fecha</p>
+            <p class="total-q">Unidades</p>
+          </div>
+          <p class="total-prize">Precio</p>
+        </div>
+
+        <div class="card">
+          <img
+            class="card-img"
+            src="https://cdn.brujulabike.com/media/29048/conversions/blobid0-blobid0-1600.jpg"
+            alt="producto"
+          />
+
+          <p class="card-product">Bicicleta usada</p>
+          <p class="card-prize">$120</p>
+
+          <img
+            class="card-logo"
+            src="/src/icons/bt_add_to_cart.svg"
+            alt="agregar al carrito"
+          />
+        </div>
+
+        <div class="card">
+          <img
+            class="card-img"
+            src="https://cdn.brujulabike.com/media/29048/conversions/blobid0-blobid0-1600.jpg"
+            alt="producto"
+          />
+
+          <p class="card-product">Bicicleta usada</p>
+          <p class="card-prize">$120</p>
+
+          <img
+            class="card-logo"
+            src="/src/icons/bt_add_to_cart.svg"
+            alt="agregar al carrito"
+          />
+        </div>
+
+        <div class="card">
+          <img
+            class="card-img"
+            src="https://cdn.brujulabike.com/media/29048/conversions/blobid0-blobid0-1600.jpg"
+            alt="producto"
+          />
+
+          <p class="card-product">Bicicleta usada</p>
+          <p class="card-prize">$120</p>
+
+          <img
+            class="card-logo"
+            src="/src/icons/bt_add_to_cart.svg"
+            alt="agregar al carrito"
+          />
+        </div>
+
+        <div class="card">
+          <img
+            class="card-img"
+            src="https://cdn.brujulabike.com/media/29048/conversions/blobid0-blobid0-1600.jpg"
+            alt="producto"
+          />
+
+          <p class="card-product">Bicicleta usada</p>
+          <p class="card-prize">$120</p>
+
+          <img
+            class="card-logo"
+            src="/src/icons/bt_add_to_cart.svg"
+            alt="agregar al carrito"
+          />
+        </div>
+
+        <div class="card">
+          <img
+            class="card-img"
+            src="https://cdn.brujulabike.com/media/29048/conversions/blobid0-blobid0-1600.jpg"
+            alt="producto"
+          />
+
+          <p class="card-product">Bicicleta usada</p>
+          <p class="card-prize">$120</p>
+
+          <img
+            class="card-logo"
+            src="/src/icons/bt_add_to_cart.svg"
+            alt="agregar al carrito"
+          />
+        </div>
+
+        <div class="card">
+          <img
+            class="card-img"
+            src="https://cdn.brujulabike.com/media/29048/conversions/blobid0-blobid0-1600.jpg"
+            alt="producto"
+          />
+
+          <p class="card-product">Bicicleta usada</p>
+          <p class="card-prize">$120</p>
+
+          <img
+            class="card-logo"
+            src="/src/icons/bt_add_to_cart.svg"
+            alt="agregar al carrito"
+          />
+        </div>
+
+        <div class="card">
+          <img
+            class="card-img"
+            src="https://cdn.brujulabike.com/media/29048/conversions/blobid0-blobid0-1600.jpg"
+            alt="producto"
+          />
+
+          <p class="card-product">Bicicleta usada</p>
+          <p class="card-prize">$120</p>
+
+          <img
+            class="card-logo"
+            src="/src/icons/bt_add_to_cart.svg"
+            alt="agregar al carrito"
+          />
+        </div>
+
+        <div class="card">
+          <img
+            class="card-img"
+            src="https://cdn.brujulabike.com/media/29048/conversions/blobid0-blobid0-1600.jpg"
+            alt="producto"
+          />
+
+          <p class="card-product">Bicicleta usada</p>
+          <p class="card-prize">$120</p>
+
+          <img
+            class="card-logo"
+            src="/src/icons/bt_add_to_cart.svg"
+            alt="agregar al carrito"
+          />
+        </div>
+
+        <div class="card">
+          <img
+            class="card-img"
+            src="https://cdn.brujulabike.com/media/29048/conversions/blobid0-blobid0-1600.jpg"
+            alt="producto"
+          />
+
+          <p class="card-product">Bicicleta usada</p>
+          <p class="card-prize">$120</p>
+
+          <img
+            class="card-logo"
+            src="/src/icons/bt_add_to_cart.svg"
+            alt="agregar al carrito"
+          />
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
